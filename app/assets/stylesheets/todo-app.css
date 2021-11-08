@@ -101,7 +101,7 @@ body{
   font-size: 12px;
 }
 
-.TodItem-dateLabel{
+.TodoItem-dueDate{
   margin-left: 10px;
   color: #726A7E;
   font-size: 12px;
