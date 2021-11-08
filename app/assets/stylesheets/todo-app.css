@@ -95,11 +95,6 @@ body{
   height: 16px;
 }
 
-.TodItem-overdeueLabel{
-  margin-left: 10px;
-  color: #C53030;
-  font-size: 12px;
-}
 
 .TodoItem-dueDate{
   margin-left: 10px;
@@ -125,8 +120,4 @@ body{
   background: #F1EDF7;
   border-radius: 4px;
 
-}
-
-.CompletedTodoText{
-  text-decoration: line-through;
 }
