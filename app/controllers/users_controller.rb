@@ -5,6 +5,10 @@ class UsersController < ApplicationController
     render plain: User.all.map { |user| user.to_pleasant_string }.join("\n")
   end
 
+  def new
+    render "new"
+  end
+
   def create
     name = params[:name]
     email = params[:email]
@@ -14,8 +18,6 @@ class UsersController < ApplicationController
       email: email,
       password: password,
     )
-    response_text = "Hey your new user is created with #{new_user.id}"
-    render plain: response_text
   end
 
   def login
