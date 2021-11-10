@@ -5,7 +5,6 @@
   </div>
   <ul>
     <% todos.each do |todo| %>
-      <% if (is_overdue && !todo.completed) || !is_overdue %>
         <li class="TodoItem">
           <label class="TodoItem-container">
             <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
@@ -27,7 +26,6 @@
             </a>
           </label>
         </li>
-      <% end %>
     <% end %>
   </ul>
 </section>
